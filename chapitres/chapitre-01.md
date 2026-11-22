@@ -21,11 +21,15 @@ convertir le texte en une suite d'entiers.
 
 Soit une séquence de tokens :
 
-\[ x_1, x_2, `\ldots`{=tex}, x_t \]
+$$
+x_1, x_2, \ldots, x_t
+$$
 
 Le modèle cherche à estimer :
 
-\[ P(x\_{t+1} `\mid `{=tex}x_1, x_2, `\ldots`{=tex}, x_t) \]
+$$
+P(x_{t+1} \mid x_1, x_2, \ldots, x_t)
+$$
 
 Il répète ensuite ce processus : le token généré est ajouté au contexte
 et sert à prédire le suivant. C'est la génération autorégressive.
