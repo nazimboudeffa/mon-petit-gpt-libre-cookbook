@@ -44,7 +44,9 @@ print(pos.shape)  # (10, 16)
 
 On additionne ensuite les embeddings des tokens et ceux des positions :
 
-\[ h_i = E(x_i) + P(i) \]
+$$
+h_i = E(x_i) + P(i)
+$$
 
 Cette somme donne au modèle à la fois une représentation du token et une
 information sur son emplacement.

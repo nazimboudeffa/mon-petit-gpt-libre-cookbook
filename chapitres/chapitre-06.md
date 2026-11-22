@@ -12,7 +12,9 @@ plusieurs têtes. Chaque tête possède ses propres projections.
 Après l'attention, chaque position passe par un petit réseau neuronal
 appliqué indépendamment aux positions :
 
-\[ `\operatorname{FFN}`{=tex}(x) = W_2,`\sigma`{=tex}(W_1x+b_1)+b_2 \]
+$$
+\operatorname{FFN}(x) = W_2 \sigma(W_1 x + b_1) + b_2
+$$
 
 Il transforme les caractéristiques calculées par l'attention.
 

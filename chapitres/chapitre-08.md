@@ -9,7 +9,9 @@ l'objectif est d'augmenter la probabilité attribuée à `r`.
 La cross-entropy pénalise les probabilités faibles données à la bonne
 réponse. Pour une cible (y) et une distribution (p) :
 
-\[ L = -`\log `{=tex}p(y) \]
+$$
+L = -\log p(y)
+$$
 
 Une perte basse indique que le modèle attribue une forte probabilité aux
 tokens attendus sur les exemples évalués. Elle ne garantit pas que le

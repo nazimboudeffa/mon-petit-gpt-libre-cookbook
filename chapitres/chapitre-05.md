@@ -13,7 +13,9 @@ puis combine leurs valeurs (Values).
 À partir d'une représentation d'entrée (X), trois projections apprises
 produisent :
 
-\[ Q = XW_Q,`\quad `{=tex}K = XW_K,`\quad `{=tex}V = XW_V \]
+$$
+Q = XW_Q, \quad K = XW_K, \quad V = XW_V
+$$
 
 -   Query : ce que la position cherche.
 -   Key : ce que chaque position propose comme information repérable.
@@ -21,18 +23,24 @@ produisent :
 
 Les scores de compatibilité sont calculés par produit scalaire :
 
-\[ S = `\frac{QK^\top}{\sqrt{d_k}}`{=tex} \]
+$$
+S = \frac{QK^\top}{\sqrt{d_k}}
+$$
 
-La division par (`\sqrt{d_k}`{=tex}) évite que les scores deviennent
+La division par $\sqrt{d_k}$ évite que les scores deviennent
 trop grands lorsque la dimension des clés augmente.
 
 On applique ensuite softmax sur chaque ligne :
 
-\[ A = `\operatorname{softmax}`{=tex}(S) \]
+$$
+A = \operatorname{softmax}(S)
+$$
 
 Enfin, les valeurs sont combinées :
 
-\[ `\operatorname{Attention}`{=tex}(Q,K,V) = AV \]
+$$
+\operatorname{Attention}(Q,K,V) = AV
+$$
 
 ### 5.2 Un calcul jouet avec PyTorch
 
