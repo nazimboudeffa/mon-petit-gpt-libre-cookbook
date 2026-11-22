@@ -13,7 +13,7 @@ Après l'attention, chaque position passe par un petit réseau neuronal
 appliqué indépendamment aux positions :
 
 $$
-\operatorname{FFN}(x) = W_2 \sigma(W_1 x + b_1) + b_2
+\mathrm{FFN}(x) = W_2 \sigma(W_1 x + b_1) + b_2
 $$
 
 Il transforme les caractéristiques calculées par l'attention.

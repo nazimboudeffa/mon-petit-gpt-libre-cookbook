@@ -33,13 +33,13 @@ trop grands lorsque la dimension des clés augmente.
 On applique ensuite softmax sur chaque ligne :
 
 $$
-A = \operatorname{softmax}(S)
+A = \mathrm{softmax}(S)
 $$
 
 Enfin, les valeurs sont combinées :
 
 $$
-\operatorname{Attention}(Q,K,V) = AV
+\mathrm{Attention}(Q,K,V) = AV
 $$
 
 ### 5.2 Un calcul jouet avec PyTorch
